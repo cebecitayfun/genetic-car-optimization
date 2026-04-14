@@ -1,6 +1,6 @@
 # Genetic Cars Evolution: An Optimization Simulation Using Genetic Algorithms
 
-[![Genetic Cars Evolution Demo](https://img.youtube.com/vi/I5m0_quKp9M/0.jpg)](https://www.youtube.com/watch?v=I5m0_quKp9M)
+[![Genetic Cars Evolution Demo](https://img.youtube.com/vi/l5m0_quKp9M/0.jpg)](https://www.youtube.com/watch?v=l5m0_quKp9M)
 
 This repository contains a web-based simulation environment that utilizes Genetic Algorithms (GA) to evolve 2D vehicle designs capable of traversing procedurally generated terrain. The project demonstrates the application of natural selection principles—such as crossover, mutation, and elitism—within a rigid-body physics simulation.
 
