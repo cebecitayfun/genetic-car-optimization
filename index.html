@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genetic Cars V2 - AI Evolution</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    
+    <div class="bg-shape shape1"></div>
+    <div class="bg-shape shape2"></div>
+    
+    <div class="app-container">
+        
+        <!-- Sol Araba Listesi Paneli -->
+        <aside class="car-list-panel glass-panel">
+            <h2>🏎️ Arabalar</h2>
+            <p class="car-list-hint">Tıkla → Kamera izlesin</p>
+            <ul id="car-list" class="car-list">
+                <!-- Dinamik olarak doldurulur -->
+            </ul>
+        </aside>
+
+        <main class="canvas-wrapper">
+            <header class="app-header">
+                <h1>AI Evolution <span>V2</span></h1>
+                <p>Poligon Mutant Arabalar ve Sınırsız Arazi</p>
+            </header>
+            
+            <div id="simulation-box">
+                <!-- Matter.js Canvas here -->
+            </div>
+            
+            <!-- Bottom chart area -->
+            <div class="bottom-panel glass-panel">
+                <div class="chart-container">
+                    <canvas id="fitnessChart"></canvas>
+                </div>
+            </div>
+        </main>
+        
+        <!-- Sağ İstatistik Paneli -->
+        <aside class="sidebar glass-panel">
+            <h2>İstatistikler</h2>
+            
+            <div class="stat-card">
+                <span class="stat-label">Jenerasyon (Generation)</span>
+                <span class="stat-value" id="gen-count">1</span>
+            </div>
+            
+            <div class="stat-card">
+                <span class="stat-label">Hayatta Kalan Arabalar</span>
+                <span class="stat-value"><span id="alive-count">0</span> / <span id="total-pop">0</span></span>
+            </div>
+            
+            <div class="stat-card">
+                <span class="stat-label">Anlık En İyi Uzaklık</span>
+                <span class="stat-value" id="curr-best-dist">0 m</span>
+            </div>
+            
+            <hr class="divider">
+            
+            <h2>Evrim Motoru Ayarları</h2>
+            
+            <div class="control-group">
+                <label for="mutation-rate">Mutasyon Oranı: <span id="mutation-val">5%</span></label>
+                <input type="range" id="mutation-rate" min="0" max="100" value="5">
+            </div>
+            
+            <div class="action-buttons">
+                <button id="btn-speed"    class="btn secondary-btn">⚡ Fast Forward</button>
+                <button id="btn-skip-gen" class="btn primary-btn">⏭ Sonraki Nesle Geç</button>
+                <button id="btn-kill-all" class="btn danger-btn">💀 Hepsini Öldür</button>
+                <button id="btn-restart"  class="btn secondary-btn">↺ Sıfırdan Başla</button>
+            </div>
+            
+            <hr class="divider">
+
+            <h2>🏆 Top Scores</h2>
+            <div class="top-scores-container">
+                <ul id="top-scores-list">
+                    <li class="score-item empty-state">Henüz rekor kırılmadı.</li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Scripts -->
+    <script src="genetic.js"></script>
+    <script src="car.js"></script>
+    <script src="engine.js"></script>
+</body>
+</html>
