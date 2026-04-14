@@ -49,7 +49,4 @@ The objective of the simulation is to evolve a population of autonomous vehicles
 3. Use the control panel to monitor evolutionary progress and adjust simulation speed as needed.
 
 ## License and Acknowledgments
-
-This project was developed as part of the "Artificial Intelligence in Action" applied programming curriculum.
-
 Developed by Tayfun Cebeci.
