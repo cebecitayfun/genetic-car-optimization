@@ -51,4 +51,3 @@ The objective of the simulation is to evolve a population of autonomous vehicles
 This project was developed as part of the "Artificial Intelligence in Action" applied programming curriculum.
 
 Developed by Tayfun Cebeci.
-Student ID: 220901749
