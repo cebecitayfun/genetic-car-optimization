@@ -8,7 +8,9 @@ This repository contains a web-based simulation environment that utilizes Geneti
 ## Simulation Preview
 
 ![Simulation Screenshot 1](screenshot1.png)
+
 ![Simulation Screenshot 2](screenshot2.png)
+
 ![Simulation Screenshot 3](screenshot3.png)
 
 ## Project Overview
